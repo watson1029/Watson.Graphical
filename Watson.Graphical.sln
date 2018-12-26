@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watson.Graphical", "..\..\Users\watso\source\repos\ConsoleApp3\Watson.Graphical\Watson.Graphical.csproj", "{3CD6415E-D19E-42B0-A100-258BBF4DC429}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Watson.Graphical", "src\Watson.Graphical\Watson.Graphical.csproj", "{3CD6415E-D19E-42B0-A100-258BBF4DC429}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
