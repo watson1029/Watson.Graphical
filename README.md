@@ -6,7 +6,7 @@ Base on System.SqlServer.Types
 ### 更新日志
 [TODO.md](TODO.md)
 ### 安装
-Install-Package Watson.Base.DotNetFramework -Version 1.1.0
+Install-Package Watson.Graphical -Version 1.1.0
 ### 方法列表
 * LineToLine
 * LineToPolygon
