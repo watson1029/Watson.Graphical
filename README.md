@@ -16,5 +16,6 @@ Install-Package Watson.Graphical -Version 1.0.0
 * PolygonToCircle(polygon, circle) 多边形与圆形关系判断
 * CircleToCircle(circle, circle) 两个圆形关系判断
 ### 其他方法
-* BMapLib.GeoUtils.isPointInPolygon(point, polygon) 点与多边形关系判断
-* BMapLib.GeoUtils.isPointInCircle(point, circle) 点与圆形关系判断
+#### namespace BMapLib.GeoUtils
+* isPointInPolygon(point, polygon) 点与多边形关系判断
+* isPointInCircle(point, circle) 点与圆形关系判断
