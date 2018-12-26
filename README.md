@@ -1,8 +1,8 @@
 地图-图形判断
 =====
 ### 概述
-Base on DotNetFramwork4.5.2
-Base on System.SqlServer.Types
+* Base on DotNetFramwork4.5.2
+* Base on System.SqlServer.Types
 ### 更新日志
 [TODO.md](TODO.md)
 ### 安装
