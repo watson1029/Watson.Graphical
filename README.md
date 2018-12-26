@@ -6,7 +6,7 @@
 ### 更新日志
 [TODO.md](TODO.md)
 ### 安装
-Install-Package Watson.Graphical -Version 1.1.0
+Install-Package Watson.Graphical -Version 1.0.0
 ### 方法列表
 * LineToLine(line, line) 两条直线关系判断
 * LineToPolygon(line, polygon) 直线与多边形关系判断
