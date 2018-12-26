@@ -1,16 +1,16 @@
-花生DotNetFramwork基类库
+地图-图形判断
 =====
 ### 概述
-Base on DotNetFramwork4.6.1
+Base on DotNetFramwork4.5.2
+Base on System.SqlServer.Types
 ### 更新日志
 [TODO.md](TODO.md)
 ### 安装
-Install-Package Watson.Base.DotNetFramework -Version 1.0.3
-### 基类库功能列表
-* ConfigurationHelper
-* DbHelper
-  * Sql
-  * Oracle
-  * MySql
-### 使用说明
-[INSTRUCTIONS.md](INSTRUCTIONS.md)
+Install-Package Watson.Base.DotNetFramework -Version 1.1.0
+### 方法列表
+* LineToLine
+* LineToPolygon
+* LineToCircle
+* PolygonToPolygon
+* PolygonToCircle
+* CircleToCircle
