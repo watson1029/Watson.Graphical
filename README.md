@@ -16,4 +16,4 @@ Install-Package Watson.Graphical -Version 1.1.0
 * CircleToCircle 两个圆形关系判断
 ### 其他方法
 * 点与多边形关系判断（使用百度地图拓展库自带方法）
-* 点与多边形关系判断（使用百度地图拓展库自带方法）
+* 点与圆形关系判断（使用百度地图拓展库自带方法）
