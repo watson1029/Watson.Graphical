@@ -8,6 +8,8 @@ namespace Watson.Graphical
 {
     public class Circle
     {
+        public const double Ea = 6378137;//赤道半径
+        public const double Eb = 6356725;//极半径
         public Point center { get; set; }
         public double radius { get; set; }
         public List<Point> points { get; set; }
@@ -29,32 +31,18 @@ namespace Watson.Graphical
         private void PointCalculation()
         {
             points = new List<Point>();
-            float angle = 10;
-            double b, c;// 边长，b是高（Y轴），C是长（X轴）
-            float B, C;// 角度，设定B是向量-变化
+            double angle = 10;
             for (int i = 0; i < 36; i++)
             {
-                float angleCenter = angle * i;
-                if (angleCenter <= 180)
-                {
-                    B = angleCenter;
-                    C = 90 - B;
-                }
-                else
-                {
-                    B = angleCenter - 360;
-                    C = 90 - B;
-                }
-                b = radius * Math.Sin(Math.PI * B / 180);
-                c = radius * Math.Sin(Math.PI * C / 180);
-
-                // 1.同一纬线上经度差一度,实际距离差多少
-                // 111km*cosφ （φ为当地纬度）
-                // 2.同一经线上纬度差一度,实际距离差多少
-                // 111km
-                b = b / (111000 * Math.Cos(center.lon)) + center.lon;
-                c = c / 111000 + center.lat;
-                points.Add(new Point(b, c));
+                double dx = radius * Math.Sin(angle * i * Math.PI / 180.0);
+                double dy = radius * Math.Cos(angle * i * Math.PI / 180.0);
+                //double ec = 6356725 + 21412 * (90.0 - GLAT) / 90.0;
+                //21412是赤道半径与极半径的差
+                double ec = Eb + (Ea - Eb) * (90.0 - center.lat) / 90.0;
+                double ed = ec * Math.Cos(center.lat * Math.PI / 180);
+                double BJD = (dx / ed + center.lon * Math.PI / 180.0) * 180.0 / Math.PI;
+                double BWD = (dy / ec + center.lat * Math.PI / 180.0) * 180.0 / Math.PI;
+                points.Add(new Point(BJD, BWD));
             }
         }
     }
